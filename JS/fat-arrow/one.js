@@ -51,6 +51,7 @@
 // }
 // wish()
 
+
 var wish=()=>{
     console.log('gm')
 }
