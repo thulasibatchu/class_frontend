@@ -29,8 +29,9 @@ function change_focus(){
     document.getElementById('de').style.backgroundColor="grey"
 }
 
-function change_blur(){
-    document.getElementById('def')
+let change_blur=()=>{
+    let name=document.getElementById('blurex').value
+    document.getElementById('blurex').value=name.toUpperCase();
 }
 
 
