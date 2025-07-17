@@ -98,6 +98,7 @@ let employees=[{"id":1,"name":"Buckie","salary":62},
 {"id":98,"name":"Gilberto","salary":41},
 {"id":99,"name":"Corrie","salary":21},
 {"id":100,"name":"Meris","salary":43}]
+
 let display_data=()=>{
     let rows='';
     for(let emp of employees){
@@ -109,5 +110,9 @@ let display_data=()=>{
                     </tr>            
                 `
     }
-    document.getElementsByTagName('tbody')[0].innerHTML=rows
-}
+    
+    document.querySelector("#myTable tbody").innerHTML = rows;
+
+  // Initialize DataTable AFTER data is loaded
+  $('#myTable').DataTable();
+};
