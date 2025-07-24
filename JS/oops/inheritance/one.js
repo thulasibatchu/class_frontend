@@ -11,7 +11,7 @@ class Child extends Parent{
         this.cname=cname
     }
 }
-let c1=new Child('rahul','rajiv')
+let c1=new Child('rahul','rajiv',22)
 console.log(c1)
 
 // class Parent{

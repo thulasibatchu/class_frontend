@@ -101,15 +101,24 @@ let employees=[{"id":1,"name":"Buckie","salary":62},
 
 let display_data=()=>{
     let rows='';
-    for(let emp of employees){
+    // for(let emp of employees){
+    //     rows=rows+`
+    //                 <tr>
+    //                     <td>${emp.id}</td>
+    //                     <td>${emp.name}</td>
+    //                     <td>${emp.salary}</td> 
+    //                 </tr>            
+    //             `
+    // }
+    employees.map((emp)=>{
         rows=rows+`
-                    <tr>
-                        <td>${emp.id}</td>
-                        <td>${emp.name}</td>
-                        <td>${emp.salary}</td> 
-                    </tr>            
-                `
-    }
+                     <tr>
+                         <td>${emp.id}</td>
+                         <td>${emp.name}</td>
+                         <td>${emp.salary}</td> 
+                     </tr> 
+                 `  
+    })
     
     document.querySelector("#myTable tbody").innerHTML = rows;
 
